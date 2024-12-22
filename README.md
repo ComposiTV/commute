@@ -32,6 +32,8 @@ You will likely need an Arch Linux build environment.
 Build wvkbd and dotool from the AUR,
 and copy them into `mkosi.packages/`
 
+Create `mkosi.local.conf` with relevant options for your target system.
+
 Run `mkosi` (or `mkosi --force` if rebuilding)
 
 `dd` the resulting `commute.raw` to the target device.
