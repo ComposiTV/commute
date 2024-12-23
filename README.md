@@ -7,7 +7,7 @@ From `mkosi.extra/etc/sway/config.d/90-compositv.conf`:
 ```
 # XF86AudioPlay = OK
 # XF86AudioStop = Stop
-# XF86AudioClose = Back
+# XF86Close = Back
 # XF86AudioMedia = Menu
 # XF86Sleep = Power
 # XF86Info = Fullscreen
