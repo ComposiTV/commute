@@ -33,6 +33,7 @@ Build wvkbd and dotool from the AUR,
 and copy them into `mkosi.packages/`
 
 Create `mkosi.local.conf` with relevant options for your target system.
+See `mkosi.local.conf.example` for a minimal configuration.
 
 Run `mkosi` (or `mkosi --force` if rebuilding)
 
