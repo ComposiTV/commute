@@ -1,27 +1,21 @@
 ## Explain
 The OS image for ComposiTV.
 
-The default Sway environment is pre-configured with bindings intended for remote controls.
+The default Sway environment is pre-configured to use an Xbox 360 Controller.
 
-From `mkosi.extra/etc/sway/config.d/90-compositv.conf`:
-```
-# XF86AudioPlay = OK
-# XF86AudioStop = Stop
-# XF86Close = Back
-# XF86AudioMedia = Menu
-# XF86Sleep = Power
-# XF86Info = Fullscreen
-```
-Control the mouse cursor with the directional buttons (arrow keys), and click by pressing OK.
+Control the mouse cursor with the Left Stick, and left click by pressing A.
 
-Press the Menu button to open the launcher.
+Scroll with the Right Stick, and middle click by pressing the Right Stick.
 
-Press Stop to close the focused program, exit the launcher, or return to the default mode.
+Right click by pressing the Left Stick ( :P ).
 
-Pressing the Back button cycles through modes.
-In the select and size modes, the OK button manages floating windows.
+Press the Guide button to open the launcher.
 
-The Info button toggles fullscreen.
+Press B to close the focused program (this will not exit the launcher).
+
+Pressing the Back button toggles the on screen keyboard.
+
+Press Y to toggle fullscreen.
 
 ## Name
 Commutativity is a property of mathematical functions.
@@ -29,8 +23,8 @@ Commutativity is a property of mathematical functions.
 ## Building
 You will likely need an Arch Linux build environment.
 
-Build wvkbd and dotool from the AUR,
-and copy them into `mkosi.packages/`
+Build wvkbd from the AUR,
+and copy it into `mkosi.packages/`
 
 Create `mkosi.local.conf` with relevant options for your target system.
 See `mkosi.local.conf.example` for a minimal configuration.
