@@ -1,0 +1,4 @@
+Haiku System Sounds 
+    Basics    
+    Copyright 2020, Maksim Malerson (FFB_soffa) <ffb.soffa@gmail.com>   
+    Licensed under CC Attribution-ShareAlike 4.0 International.   
