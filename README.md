@@ -33,3 +33,6 @@ Run `mkosi` (or `mkosi --force` if rebuilding)
 
 `dd` the resulting `commute.raw` to the target device.
 systemd-repart will resize partitions on first boot.
+
+## Copying
+While most contents of this repository are licensed under 0BSD, the sound theme included is licensed under CC BY-SA 4.0; see `mkosi.extra/usr/share/compositv/sounds/basics/license_note.txt` for information.
