@@ -1,3 +1,5 @@
+initrd
+initrd.*
 commute
 commute.*
 mkosi.local.conf

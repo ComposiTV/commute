@@ -6,8 +6,6 @@ After=systemd-repart.service
 
 [Service]
 Type=oneshot
-ExecStart=btrfs filesystem resize max /var
-ExecStart=useradd -G input -d /home/ctv -M ctv
 ExecStart=install -d -o ctv -g ctv /var/home/ctv
 ExecStart=install -d -o ctv -g ctv /var/home/ctv/.config/sway
 ExecStart=install -o ctv -g ctv /usr/share/compositv/sway-config /var/home/ctv/.config/sway/config

@@ -23,8 +23,8 @@ Commutativity is a property of mathematical functions.
 ## Building
 You will likely need an Arch Linux build environment.
 
-Build wvkbd from the AUR,
-and copy it into `mkosi.packages/`
+Build wvkbd and waterfox-bin from the AUR,
+and copy them into `mkosi.packages/`
 
 Create `mkosi.local.conf` with relevant options for your target system.
 See `mkosi.local.conf.example` for a minimal configuration.
