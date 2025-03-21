@@ -1,5 +1,3 @@
 #!/bin/sh
-systemctl enable firstbootsetup
 systemctl enable sway@tty1
-systemctl enable NetworkManager
 useradd -G input,wheel -d /home/ctv -M ctv

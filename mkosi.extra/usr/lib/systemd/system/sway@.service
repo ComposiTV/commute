@@ -2,8 +2,8 @@
 Description=Sway on %I
 After=systemd-user-sessions.service
 ConditionPathExists=/dev/tty0
-Wants=dbus.socket systemd-logind.service
-After=dbus.socket systemd-logind.service
+Wants=dbus.socket systemd-logind.service home-ctv.target
+After=dbus.socket systemd-logind.service home-ctv.target
 Conflicts=getty@%i.service
 After=getty@%i.service
 

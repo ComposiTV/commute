@@ -1,0 +1,11 @@
+[Unit]
+Description=Home Directory of: ctv
+ConditionPathExists=!/home/ctv
+After=home.mount
+Before=systemd-user-sessions.service
+
+[Service]
+ExecStart=install -m 740 -o ctv -g ctv -d /home/ctv
+
+[Install]
+WantedBy=graphical.target
