@@ -15,8 +15,6 @@ Press the Guide button to open the launcher.
 
 Press the Back button to close the focused program (this will not exit the launcher).
 
-Press B to exit the launcher.
-
 Press X to toggle the on screen keyboard.
 
 Press Y to toggle fullscreen.
