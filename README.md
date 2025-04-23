@@ -40,3 +40,7 @@ systemd-repart will resize partitions on first boot.
 A local HTTP server `commute-dev-update-server.lan` may be set up to provide updates.
 
 See the files under `mkosi.extra/usr/lib/sysupdate.d/` for more information, and the `systemd-sysupdate` documentation.
+
+Also see `autobuild.sh`, which will automatically populate `/srv/http/` with new update files and delete old ones.
+
+**Notice**: *Any* files under `/srv/http/` older than 3 days are deleted.
