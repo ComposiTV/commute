@@ -11,11 +11,11 @@ set $mod Mod4
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu fuzzel & paplay /usr/share/compositv/sounds/basics/window_open.wav
+set $menu fuzzel & paplay /usr/share/compositv/sounds/opal/launcher.wav
 
 font Sedenion 12
 seat seat0 xcursor_theme "Adwaita" 32
-output * scale 1.5
+output * scale 1
 focus_follows_mouse no
 
 ### Output configuration
@@ -211,9 +211,10 @@ bar {
 
 bindsym $mod+k exec killall -s 34 wvkbd-mobintl
 
+exec mako
 exec wvkbd-mobintl --hidden
 exec antimicrox --hidden --no-tray --profile /usr/share/compositv/ctv.gamecontroller.amgp
 exec nm-applet
-exec paplay /usr/share/compositv/sounds/basics/startup.wav
+exec paplay /usr/share/compositv/sounds/opal/startup.wav
 
 include /etc/sway/config.d/*

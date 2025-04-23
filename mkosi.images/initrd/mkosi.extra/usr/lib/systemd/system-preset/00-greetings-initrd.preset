@@ -1,2 +1,0 @@
-enable systemd-repart.service
-enable systemd-modules-load.service

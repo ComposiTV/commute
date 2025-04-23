@@ -11,9 +11,11 @@ Right click by pressing the Left Stick ( :P ).
 
 Press the Guide button to open the launcher.
 
-Press B to close the focused program (this will not exit the launcher).
+Press the Back button to close the focused program (this will not exit the launcher).
 
-Pressing the Back button toggles the on screen keyboard.
+Press B to exit the launcher.
+
+Press X to toggle the on screen keyboard.
 
 Press Y to toggle fullscreen.
 
@@ -23,7 +25,7 @@ Commutativity is a property of mathematical functions.
 ## Building
 You will likely need an Arch Linux build environment.
 
-Build wvkbd and waterfox-bin from the AUR,
+Build bauh, wvkbd, and waterfox-bin from the AUR,
 and copy them into `mkosi.packages/`
 
 Create `mkosi.local.conf` with relevant options for your target system.
@@ -34,5 +36,7 @@ Run `mkosi` (or `mkosi --force` if rebuilding)
 `dd` the resulting `commute.raw` to the target device.
 systemd-repart will resize partitions on first boot.
 
-## Copying
-While most contents of this repository are licensed under 0BSD, the sound theme included is licensed under CC BY-SA 4.0; see `mkosi.extra/usr/share/compositv/sounds/basics/license_note.txt` for information.
+## Updating
+A local HTTP server `commute-dev-update-server.lan` may be set up to provide updates.
+
+See the files under `mkosi.extra/usr/lib/sysupdate.d/` for more information, and the `systemd-sysupdate` documentation.

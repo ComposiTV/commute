@@ -1,0 +1,20 @@
+[Transfer]
+ProtectVersion=%A
+Verify=false
+
+[Target]
+Type=regular-file
+Path=/EFI/Linux
+PathRelativeTo=boot
+MatchPattern=commute_@v+@l-@d.efi \
+             commute_@v+@l.efi \
+             commute_@v.efi
+Mode=0444
+TriesLeft=3
+TriesDone=0
+InstancesMax=2
+
+[Source]
+Type=url-file
+Path=http://commute-dev-update-server.lan/
+MatchPattern=commute_@v.efi
