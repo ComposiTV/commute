@@ -4,8 +4,8 @@
     <sdlname>Xbox 360 Controller</sdlname>
     <!--The Unique ID for a joystick is included for informational purposes only.-->
     <uniqueID>030081b85e0400008e020000100100001118654</uniqueID>
-    <stickAxisAssociation index="1" xAxis="1" yAxis="2"/>
     <stickAxisAssociation index="2" xAxis="3" yAxis="4"/>
+    <stickAxisAssociation index="1" xAxis="1" yAxis="2"/>
     <vdpadButtonAssociations index="1">
         <vdpadButtonAssociation axis="0" button="12" direction="1"/>
         <vdpadButtonAssociation axis="0" button="13" direction="4"/>
@@ -13,67 +13,24 @@
         <vdpadButtonAssociation axis="0" button="15" direction="2"/>
     </vdpadButtonAssociations>
     <names>
-        <controlstickname index="1">Stick 1</controlstickname>
         <controlstickname index="2">Stick 2</controlstickname>
+        <controlstickname index="1">Stick 1</controlstickname>
     </names>
     <sets>
         <set index="1">
-            <stick index="1">
-                <diagonalRange>65</diagonalRange>
-                <stickbutton index="3">
-                    <slots>
-                        <slot>
-                            <code>4</code>
-                            <mode>mousemovement</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
+            <stick index="2">
                 <stickbutton index="1">
                     <slots>
                         <slot>
-                            <code>1</code>
-                            <mode>mousemovement</mode>
+                            <code>4</code>
+                            <mode>mousebutton</mode>
                         </slot>
                     </slots>
                 </stickbutton>
-                <stickbutton index="7">
-                    <slots>
-                        <slot>
-                            <code>3</code>
-                            <mode>mousemovement</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-                <stickbutton index="5">
-                    <slots>
-                        <slot>
-                            <code>2</code>
-                            <mode>mousemovement</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-            </stick>
-            <stick index="2">
                 <stickbutton index="3">
                     <slots>
                         <slot>
                             <code>7</code>
-                            <mode>mousebutton</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-                <stickbutton index="1">
-                    <slots>
-                        <slot>
-                            <code>4</code>
-                            <mode>mousebutton</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-                <stickbutton index="7">
-                    <slots>
-                        <slot>
-                            <code>6</code>
                             <mode>mousebutton</mode>
                         </slot>
                     </slots>
@@ -86,27 +43,69 @@
                         </slot>
                     </slots>
                 </stickbutton>
+                <stickbutton index="7">
+                    <slots>
+                        <slot>
+                            <code>6</code>
+                            <mode>mousebutton</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
             </stick>
-            <trigger index="5">
-                <throttle>positivehalf</throttle>
-            </trigger>
+            <stick index="1">
+                <diagonalRange>65</diagonalRange>
+                <stickbutton index="1">
+                    <slots>
+                        <slot>
+                            <code>1</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="3">
+                    <slots>
+                        <slot>
+                            <code>4</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="5">
+                    <slots>
+                        <slot>
+                            <code>2</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="7">
+                    <slots>
+                        <slot>
+                            <code>3</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+            </stick>
             <trigger index="6">
                 <throttle>positivehalf</throttle>
             </trigger>
-            <button index="9">
+            <trigger index="5">
+                <throttle>positivehalf</throttle>
+            </trigger>
+            <button index="2">
                 <slots>
                     <slot>
-                        <code>2</code>
-                        <mode>mousebutton</mode>
+                        <code>0x1000000</code>
+                        <mode>keyboard</mode>
                     </slot>
                 </slots>
             </button>
-            <button index="3">
+            <button index="1">
                 <slots>
                     <slot>
-                        <path>/usr/bin/killall</path>
-                        <arguments>-s 34 wvkbd-mobintl</arguments>
-                        <mode>execute</mode>
+                        <code>1</code>
+                        <mode>mousebutton</mode>
                     </slot>
                 </slots>
             </button>
@@ -119,27 +118,21 @@
                     </slot>
                 </slots>
             </button>
-            <button index="1">
+            <button index="3">
                 <slots>
                     <slot>
-                        <code>1</code>
-                        <mode>mousebutton</mode>
+                        <path>/usr/bin/killall</path>
+                        <arguments>-s 34 wvkbd-mobintl</arguments>
+                        <mode>execute</mode>
                     </slot>
                 </slots>
             </button>
-            <button index="2">
+            <button index="6">
                 <slots>
                     <slot>
-                        <code>0x1000000</code>
-                        <mode>keyboard</mode>
-                    </slot>
-                </slots>
-            </button>
-            <button index="8">
-                <slots>
-                    <slot>
-                        <code>3</code>
-                        <mode>mousebutton</mode>
+                        <path>/usr/bin/bash</path>
+                        <arguments>-c &quot;fuzzel &amp; paplay /usr/share/compositv/sounds/opal/launcher.wav&quot;</arguments>
+                        <mode>execute</mode>
                     </slot>
                 </slots>
             </button>
@@ -152,12 +145,28 @@
                     </slot>
                 </slots>
             </button>
-            <button index="6">
+            <button index="8">
                 <slots>
                     <slot>
-                        <path>/usr/bin/bash</path>
-                        <arguments>-c &quot;fuzzel &amp; paplay /usr/share/compositv/sounds/opal/launcher.wav&quot;</arguments>
+                        <code>3</code>
+                        <mode>mousebutton</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="7">
+                <slots>
+                    <slot>
+                        <path>/usr/bin/swaymsg</path>
+                        <arguments>floating toggle</arguments>
                         <mode>execute</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="9">
+                <slots>
+                    <slot>
+                        <code>2</code>
+                        <mode>mousebutton</mode>
                     </slot>
                 </slots>
             </button>

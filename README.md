@@ -9,6 +9,8 @@ Scroll with the Right Stick, and middle click by pressing the Right Stick.
 
 Right click by pressing the Left Stick ( :P ).
 
+Press the Start button to switch the focused window between tiling and floating.
+
 Press the Guide button to open the launcher.
 
 Press the Back button to close the focused program (this will not exit the launcher).
