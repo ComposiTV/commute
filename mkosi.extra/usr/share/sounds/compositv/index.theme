@@ -1,0 +1,7 @@
+[Sound Theme]
+Name=compositv
+Comment="The default sound theme."
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo
