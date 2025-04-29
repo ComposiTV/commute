@@ -1,3 +1,4 @@
 enable etc.mount
 enable NetworkManager.service
 enable create-home-ctv.service
+enable sway@.service

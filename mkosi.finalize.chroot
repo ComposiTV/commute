@@ -1,4 +1,3 @@
 #!/bin/sh
-systemctl enable sway@tty1
 useradd -G input,wheel -d /home/ctv -M ctv
 chmod u+s /usr/bin/bwrap

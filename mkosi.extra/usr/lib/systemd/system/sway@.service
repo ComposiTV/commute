@@ -2,8 +2,8 @@
 Description=Sway on %I
 After=systemd-user-sessions.service
 ConditionPathExists=/dev/tty0
-Wants=dbus.socket systemd-logind.service home-ctv.target
-After=dbus.socket systemd-logind.service home-ctv.target
+Wants=dbus.socket systemd-logind.service create-home-ctv.service
+After=dbus.socket systemd-logind.service create-home-ctv.service
 Conflicts=getty@%i.service
 After=getty@%i.service
 
@@ -24,4 +24,4 @@ PAMName=sway
 
 [Install]
 WantedBy=graphical.target
-DefaultInstance=tty7
+DefaultInstance=tty1
