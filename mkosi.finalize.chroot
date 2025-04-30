@@ -1,3 +1,4 @@
 #!/bin/sh
 useradd -G input,wheel -d /home/ctv -M ctv
 chmod u+s /usr/bin/bwrap
+gsettings set org.gnome.desktop.sound theme-name compositv
