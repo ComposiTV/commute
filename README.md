@@ -7,7 +7,7 @@ Control the mouse cursor with the Left Stick, and left click by pressing A.
 
 Scroll with the Right Stick, and middle click by pressing the Right Stick.
 
-Right click by pressing the Left Stick ( :P ), or by holding A.
+Right click by pressing the Left Stick ( :P ).
 
 Press the Start button to switch the focused window between tiling and floating.
 
