@@ -118,7 +118,7 @@
                     </slot>
                     <slot>
                         <path>/usr/bin/bash</path>
-                        <arguments>-c &quot;paplay /usr/share/sounds/compositv/stereo/dialog-question.wav &amp; swaynag -b 'Reboot' 'systemctl reboot' -b 'Power off' 'systemctl poweroff' -m 'You pressed the power button.'&quot;</arguments>
+                        <arguments>-c &quot;paplay /usr/share/sounds/compositv/stereo/dialog-question.wav &amp; swaynag -t warning -b 'Reboot' 'systemctl reboot' -b 'Power off' 'systemctl poweroff' -m 'You pressed the power button.'&quot;</arguments>
                         <mode>execute</mode>
                     </slot>
                     <slot>
