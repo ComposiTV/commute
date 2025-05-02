@@ -19,18 +19,10 @@
     <sets>
         <set index="1">
             <stick index="2">
-                <stickbutton index="1">
+                <stickbutton index="7">
                     <slots>
                         <slot>
-                            <code>4</code>
-                            <mode>mousebutton</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-                <stickbutton index="3">
-                    <slots>
-                        <slot>
-                            <code>7</code>
+                            <code>6</code>
                             <mode>mousebutton</mode>
                         </slot>
                     </slots>
@@ -43,10 +35,18 @@
                         </slot>
                     </slots>
                 </stickbutton>
-                <stickbutton index="7">
+                <stickbutton index="3">
                     <slots>
                         <slot>
-                            <code>6</code>
+                            <code>7</code>
+                            <mode>mousebutton</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="1">
+                    <slots>
+                        <slot>
+                            <code>4</code>
                             <mode>mousebutton</mode>
                         </slot>
                     </slots>
@@ -54,18 +54,10 @@
             </stick>
             <stick index="1">
                 <diagonalRange>65</diagonalRange>
-                <stickbutton index="1">
+                <stickbutton index="7">
                     <slots>
                         <slot>
-                            <code>1</code>
-                            <mode>mousemovement</mode>
-                        </slot>
-                    </slots>
-                </stickbutton>
-                <stickbutton index="3">
-                    <slots>
-                        <slot>
-                            <code>4</code>
+                            <code>3</code>
                             <mode>mousemovement</mode>
                         </slot>
                     </slots>
@@ -78,10 +70,18 @@
                         </slot>
                     </slots>
                 </stickbutton>
-                <stickbutton index="7">
+                <stickbutton index="3">
                     <slots>
                         <slot>
-                            <code>3</code>
+                            <code>4</code>
+                            <mode>mousemovement</mode>
+                        </slot>
+                    </slots>
+                </stickbutton>
+                <stickbutton index="1">
+                    <slots>
+                        <slot>
+                            <code>1</code>
                             <mode>mousemovement</mode>
                         </slot>
                     </slots>
@@ -93,11 +93,55 @@
             <trigger index="5">
                 <throttle>positivehalf</throttle>
             </trigger>
-            <button index="1">
+            <button index="8">
                 <slots>
                     <slot>
-                        <code>1</code>
+                        <code>3</code>
                         <mode>mousebutton</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="7">
+                <slots>
+                    <slot>
+                        <path>/usr/bin/swaymsg</path>
+                        <arguments>floating toggle</arguments>
+                        <mode>execute</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="6">
+                <slots>
+                    <slot>
+                        <code>500</code>
+                        <mode>hold</mode>
+                    </slot>
+                    <slot>
+                        <path>/usr/bin/bash</path>
+                        <arguments>-c &quot;paplay /usr/share/sounds/compositv/stereo/dialog-question.wav &amp; swaynag -b 'Reboot' 'systemctl reboot' -b 'Power off' 'systemctl poweroff' -m 'You pressed the power button.'&quot;</arguments>
+                        <mode>execute</mode>
+                    </slot>
+                    <slot>
+                        <code>10</code>
+                        <mode>release</mode>
+                    </slot>
+                    <slot>
+                        <path>/usr/bin/bash</path>
+                        <arguments>-c &quot;if pidof fuzzel; then killall fuzzel; else fuzzel &amp; paplay /usr/share/compositv/sounds/opal/launcher.wav; fi&quot;</arguments>
+                        <mode>execute</mode>
+                    </slot>
+                    <slot>
+                        <code>490</code>
+                        <mode>release</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="5">
+                <slots>
+                    <slot>
+                        <path>/usr/bin/swaymsg</path>
+                        <arguments>kill</arguments>
+                        <mode>execute</mode>
                     </slot>
                 </slots>
             </button>
@@ -119,38 +163,11 @@
                     </slot>
                 </slots>
             </button>
-            <button index="6">
+            <button index="1">
                 <slots>
                     <slot>
-                        <path>/usr/bin/bash</path>
-                        <arguments>-c &quot;if pidof fuzzel; then killall fuzzel; else fuzzel &amp; paplay /usr/share/compositv/sounds/opal/launcher.wav; fi&quot;</arguments>
-                        <mode>execute</mode>
-                    </slot>
-                </slots>
-            </button>
-            <button index="5">
-                <slots>
-                    <slot>
-                        <path>/usr/bin/swaymsg</path>
-                        <arguments>kill</arguments>
-                        <mode>execute</mode>
-                    </slot>
-                </slots>
-            </button>
-            <button index="8">
-                <slots>
-                    <slot>
-                        <code>3</code>
+                        <code>1</code>
                         <mode>mousebutton</mode>
-                    </slot>
-                </slots>
-            </button>
-            <button index="7">
-                <slots>
-                    <slot>
-                        <path>/usr/bin/swaymsg</path>
-                        <arguments>floating toggle</arguments>
-                        <mode>execute</mode>
                     </slot>
                 </slots>
             </button>
